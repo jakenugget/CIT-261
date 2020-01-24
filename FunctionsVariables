@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Convert Measurements to Acres</title>
+
+<script>
+/* Input: a area to acres
+ * Processing: convert the area to acres
+ * Output: the area converted to acres
+ */
+function acreslit() {
+    // Read a measurement.
+    var text1 = document.getElementById('acres1InputBox').value;
+    var text2 = document.getElementById('acres2InputBox').value;
+
+    // Convert what the user typed from text into a number.
+    var w = parseFloat(text1);
+    var l = parseFloat(text2);
+
+    // Convert the measurement to acres.
+    var a = w * l / 43560;
+
+    // Display the Acres to the user.
+    document.getElementById('acresDiv').innerHTML = a + " Acres " ;
+}
+</script>
+</head>
+
+<body>                               
+Enter your width: <input type="text1" id="acres1InputBox">
+Enter your length: <input type="text2" id="acres2InputBox">
+<button type="button" onclick="acreslit()">Convert</button>
+<div id="acresDiv"></div>                     
+</body>            
+</html>
