@@ -2,17 +2,17 @@
 <html>
 <body>
 
-<h2>JavaScript For Loop</h2>
+<h2>DragonBall Super</h2>
 
-<p id="demo"></p>
+<p>Ten Fighters of the Tournament of Power.</p>
 
 <script>
-var text = "";
-var i;
-for (i = 0; i < 5; i++) {
-  text += "The number is " + i + "<br>";
+var dbz = ['Goku', 'Vegeta', 'Gohan', 'Freiza', 'Krillin', 'Master Roshi', 'Tien', 'Android 17', 'Android 18', 'Piccolo'];
+var z;
+
+for (z of dbz) {
+  document.write(z + "<br >");
 }
-document.getElementById("demo").innerHTML = text;
 </script>
 
 </body>
