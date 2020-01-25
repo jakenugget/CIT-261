@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+      
+<script type = "text/javascript">
+<!--
+var count = -10;
+document.write("-10 through 10 <br />");
+         
+while (count < 11) {
+document.write("Current Count : " + count + "<br />");
+count++;
+}
+         
+document.write("Well now wasn't that fun?");
+</script>
+      
+<p>Good Ol' While Loops</p>
+</body>
+</html>
