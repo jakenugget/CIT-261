@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<p>Sum of all arguments:</p>
+<p>Are you worthy:</p>
 <p id="demo"></p>
 
 <script>
@@ -14,8 +14,9 @@ function sumAll() {
   }
   return sum;
 }
-document.getElementById("demo").innerHTML = sumAll(1, 123, 500, 115, 44, 88);
-</script>
+document.getElementById("demo").innerHTML = sumAll(500, 400, 300);
 
+</script>
+<p>Welcome to the 1000 pound club!</p>
 </body>
 </html>
