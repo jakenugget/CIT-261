@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <body>
-      
-<script type = "text/javascript">
-<!--
-var count = -10;
-document.write("-10 through 10 <br />");
-         
-while (count < 11) {
-document.write("Current Count : " + count + "<br />");
-count++;
+
+<p>Are you worthy:</p>
+<p id="demo"></p>
+
+<script>
+function sumAll() {
+  var i;
+  var sum = 0;
+  for(i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
 }
-         
-document.write("Well now wasn't that fun?");
+document.getElementById("demo").innerHTML = sumAll(500, 400, 300);
+
 </script>
-      
-<p>Good Ol' While Loops</p>
+<p>Welcome to the 1000 pound club!</p>
 </body>
 </html>
