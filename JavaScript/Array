@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Array of Magic</title>
+<script>
+function addEnds(list) {
+var last = list.length - 1;
+
+return list[0] + list[last];
+}
+function doProc() {
+
+var listLength = Math.floor(Math.random() * 99) + 1 ;
+var list = new Array(listLength);
+
+for (var index = 0; index < listLength; index++) {
+list[index] = Math.floor(Math.random() * 99);
+}
+
+var sumOfEnds = addEnds(list);
+
+document.getElementById('outputArrDiv').innerHTML = list;
+
+document.getElementById('outputSumDiv').innerHTML = sumOfEnds;
+}
+
+</script>
+</head>
+
+<body>
+<h1>Add First and Last Numbers of Array</h1>
+<button type="button" onclick="doProc()">Add</button>
+Array:
+<div id="outputArrDiv"></div>
+Sum of Ends:
+<div id="outputSumDiv"></div>
+</body>
+
+</html>
