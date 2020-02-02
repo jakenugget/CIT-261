@@ -1,0 +1,62 @@
+<html>
+   <head>		
+      <script type = "application/javascript">
+         function loadJSON() {
+            var data_file = "ajax.json";
+            var http_request = new XMLHttpRequest();
+            try{
+               http_request = new XMLHttpRequest();
+            }catch (e) {
+               try{
+                  http_request = new ActiveXObject("Msxml2.XMLHTTP");					
+               }catch (e) {				
+                  try{
+                     http_request = new ActiveXObject("Microsoft.XMLHTTP");
+                  }catch (e) {
+                     alert("404 Not Found!");
+                     return false;
+                  }					
+               }
+            }
+			
+            http_request.onreadystatechange = function() {
+			
+               if (http_request.readyState == 4  ) {
+                  var jsonObj = JSON.parse(http_request.responseText);
+
+                  document.getElementById("point").innerHTML = jsonObj.point;
+                  document.getElementById("shooting").innerHTML = jsonObj.shooting;
+                  document.getElementById("small").innerHTML = jsonObj.small;
+                  document.getElementById("power").innerHTML = jsonObj.power;
+                  document.getElementById("center").innerHTML = jsonObj.center;
+               }
+            }
+			
+            http_request.open("GET", data_file, true);
+            http_request.send();
+         }
+		
+      </script>
+	
+      <title>AJAX Requesting a JSON file</title>
+   </head>
+	
+   <body>
+      <h1>AJAX Requesting a JSON file</h1>
+		
+      <table class = "src">
+         <tr><th>Point Guard</th><th>Shooting Guard</th><th>Small Forward</th><th>Power Forward</th><th>Center</th></tr>
+         <tr><td><div id = "point">Lebron James</div></td>
+         <td><div id = "shooting">Avery Bradley</div></td>
+         <td><div id = "small">Danny Green</div></td>
+         <td><div id = "power">Anthony Davis</div></td>
+         <td><div id = "center">JaVale McGee</div></td></tr>
+      </table>
+
+      <div class = "central">
+         <button type = "button" onclick = "loadJSON()">Update Details </button>
+      </div>
+		
+   </body>
+		
+</html>
