@@ -59,3 +59,169 @@ Sum of Ends:
 </body>
 
 </html>
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>What to wear?</title>
+
+<script>
+/* Input: Workout
+* Processing: Decide what footwear to use
+* Output: Footwear
+*/
+function footlit() {
+var weather = document.getElementById('footInputBox').value;
+var footwear = "shoes";
+
+if (weather == "running") 
+{
+footwear = "running shoes";
+}
+else if (weather == "crossfit")
+{
+footwear = "metcons";
+}
+else if (weather == "football") 
+{
+footwear = "cleats";
+}
+else 
+{
+footwear = "shoes";
+}
+document.getElementById('footDiv').innerHTML = ("You should wear " + footwear + " and good luck.");
+}
+</script>
+</head>
+
+<body>
+What workout will you do today? : <input type="text" id="footInputBox">
+<button type="button" onclick="footlit()">Help me decide</button>
+<div id="footDiv"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>DragonBall Super</h2>
+
+<p>Ten Fighters of the Tournament of Power.</p>
+
+<script>
+var dbz = ['Goku', 'Vegeta', 'Gohan', 'Freiza', 'Krillin', 'Master Roshi', 'Tien', 'Android 17', 'Android 18', 'Piccolo'];
+var z;
+
+for (z of dbz) {
+  document.write(z + "<br >");
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Calculate 1000 Pound Club</title>
+
+<script>
+/* Input: Bench, Squat and Deadlift
+ * Processing: Add the Numbers
+ * Output: Sum of Numbers
+ */
+function swolelit() {
+    // Read a measurement.
+    var text1 = document.getElementById('bench1InputBox').value;
+    var text2 = document.getElementById('squat2InputBox').value;
+    var text3 = document.getElementById('dead3InputBox').value;
+
+    // Convert what the user typed from text into a number.
+    var w = parseFloat(text1);
+    var l = parseFloat(text2);
+    var z = parseFloat(text3);
+
+    // Convert the measurement to acres.
+    var a = w + l + z;
+
+    // Display the Acres to the user.
+    document.getElementById('swoleDiv').innerHTML = a + " Pounds " ;
+}
+</script>
+</head>
+
+<body>                               
+Enter your Bench: <input type="text1" id="bench1InputBox">
+Enter your Squat: <input type="text2" id="squat2InputBox">
+Enter your Deadlift: <input type="text3" id="dead3InputBox">
+<button type="button" onclick="swolelit()">Convert</button>
+<div id="swoleDiv"></div>                     
+</body>            
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Are you worthy:</p>
+<p id="demo"></p>
+
+<script>
+function sumAll() {
+  var i;
+  var sum = 0;
+  for(i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+document.getElementById("demo").innerHTML = sumAll(500, 400, 300);
+
+</script>
+<p>Welcome to the 1000 pound club!</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+      
+<script type = "text/javascript">
+<!--
+var count = 1;
+document.write("Hide and Seek <br />");
+         
+while (count < 11) {
+document.write(count + " Mississipi" + "<br />");
+count++;
+}
+         
+document.write("Ready or Not Here I Come!");
+</script>
+      
+<p>I miss the good ol' days as kids!</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<h2>Powering Up</h2>
+
+<p id="Power up"></p>
+
+<script>
+var person = ["Saiyan", "Super Saiyan", "Super Saiyan 2", "Super Saiyan 3"];
+document.getElementById("Power up").innerHTML =
+person[1] + " " + person.length;
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
