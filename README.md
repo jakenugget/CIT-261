@@ -1,10 +1,22 @@
 ## Jacob Verde CIT261
 
-You can use the [editor on GitHub](https://github.com/jakenugget/CIT-261/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Coding Topic: JavaScript
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I wanted to break each topic down into its own code so I could get a better understand of how each topic worked. Loops are just like it sounds they loop until told to stop. Conditional statements check off boxes until it finds the correct answer (if not this than this.) A function is called and does what it was designed to do. Variables hold the value they are given to be used somewhere. Parameters give functions specific things to do. An array is basically a list of variables and Associated Arrays are the same except they use numbers to find the stored value.
 
-### Markdown
+### Array
+
+### Associative Array
+
+### Conditional Statement
+
+### For Loop
+
+### Functions and Variables
+
+### Parameters
+
+### While
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
