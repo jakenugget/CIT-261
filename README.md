@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Jacob Verde CIT261
 
 You can use the [editor on GitHub](https://github.com/jakenugget/CIT-261/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
