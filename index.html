@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jacob Verde CIT261 | Powerlifting</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=bYj6dPKnnXb6a9BWcoIhtmHjOx2HoSbY6wnqaIcK&location=Denver+CO
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <h1>Jacob Verde Final Project</h1>
+
+      <script>
+        function swolelit() {
+          var text1 = document.getElementById("bench1InputBox").value;
+          var text2 = document.getElementById("squat2InputBox").value;
+          var text3 = document.getElementById("dead3InputBox").value;
+
+          var w = parseFloat(text1);
+          var l = parseFloat(text2);
+          var z = parseFloat(text3);
+
+          var a = w + l + z;
+
+          document.getElementById("swoleDiv").innerHTML = a + " Pounds ";
+        }
+
+        function gainslit() {
+          var text4 = document.getElementById("bench4InputBox").value;
+          var text5 = document.getElementById("squat5InputBox").value;
+          var text6 = document.getElementById("clean6InputBox").value;
+
+          var b = parseFloat(text4);
+          var s = parseFloat(text5);
+          var c = parseFloat(text6);
+
+          var q = b + s + c;
+
+          document.getElementById("gainsDiv").innerHTML = q + " Pounds ";
+        }
+      </script>
+
+      <body>
+        <h3>Calculate Your 1000 Pound Club Score</h3>
+        Enter your Bench: <input type="text1" id="bench1InputBox" /> <br />
+        Enter your Squat: <input type="text2" id="squat2InputBox" /> <br />
+        Enter your Deadlift: <input type="text3" id="dead3InputBox" /> <br />
+        <br />
+        <button type="button" onclick="swolelit()">Calculate</button>
+        <div id="swoleDiv"></div>
+      </body>
+
+      <p>Add Your 1000 Pound Club Score</p>
+      <input type="text7" id="whatToDo" />
+      <button id="addToList">Add to List</button>
+      <button id="deleteList">Delete List</button>
+      <p id="list"></p>
+      <p>Refresh page to see it added.</p>
+
+      <body>
+        <h3>Calculate Your 750 Pound Club Score</h3>
+        Enter your Bench: <input type="text4" id="bench4InputBox" /> <br />
+        Enter your Squat: <input type="text5" id="squat5InputBox" /> <br />
+        Enter your Power Clean: <input type="text6" id="clean6InputBox" /><br />
+        <br />
+        <button type="button" onclick="gainslit()">Calculate</button>
+        <div id="gainsDiv"></div>
+
+        <p>Add Your 750 Pound Club Score</p>
+        <input type="text8" id="whatToDo2" />
+        <button id="addToList2">Add to List</button>
+        <button id="deleteList2">Delete List</button>
+        <p id="list2"></p>
+        <p>Refresh page to see it added.</p>
+
+        <br />
+        <br />
+        <div class="api">
+          <iframe
+            width="560"
+            height="315"
+            src="https://api.nal.usda.gov/fdc/v1/search?api_key=bYj6dPKnnXb6a9BWcoIhtmHjOx2HoSbY6wnqaIcK"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <br />
+        <section class="cardCont">
+          <div id="card">
+            <figure class="front"><br />Bench</figure>
+            <figure class="back"><br />Demostration</figure>
+          </div>
+        </section>
+        <div class="bench">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/gRVjAtPip0Y"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <br />
+        <div id="linear">Squat Demonstation</div>
+        <br />
+        <div class="squat">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Po9CDtfcLJI"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <br />
+        <h2>Deadlift Demostration</h2>
+        <div class="deadlift">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/r4MzxtBKyNE"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <br />
+        <h2>Power Clean Demostration</h2>
+        <div class="clean">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/H12B8x2pMqo"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </body>
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="justcenter">
+          <p class="sanserif">Jacob Verde CIT261</p>
+        </div>
+        <div></div>
+      </section>
+    </footer>
+    <script src="verde.js"></script>
+  </body>
+</html>
