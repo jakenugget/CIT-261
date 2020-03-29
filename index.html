@@ -5,9 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    <script>
-      https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=bYj6dPKnnXb6a9BWcoIhtmHjOx2HoSbY6wnqaIcK&location=Denver+CO
-    </script>
   </head>
 
   <body>
@@ -143,6 +140,20 @@
             allowfullscreen
           ></iframe>
         </div>
+        <br />
+        <h2>Maps</h2>
+        <div class="map">
+          <iframe
+            width="560"
+            height="315"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC99wotFC6oi2gTSuZ4YH7Hu2Zf-ubxoPg&callback=initMap"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            async
+            defer
+          ></iframe>
+        </div>
       </body>
     </main>
     <footer>
@@ -153,6 +164,11 @@
         <div></div>
       </section>
     </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC99wotFC6oi2gTSuZ4YH7Hu2Zf-ubxoPg&callback=initMap"
+      async
+      defer
+    ></script>
     <script src="verde.js"></script>
   </body>
 </html>
